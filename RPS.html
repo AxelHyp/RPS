@@ -13,16 +13,16 @@
         }
 
         function playerChoice () {
-            let input = prompt("Enter either rock, paper or scissors").toLowerCase()
             while (true) {
+                let input = prompt("Enter either rock, paper or scissors").toLowerCase()
                 if (["rock", "paper", "scissors"].includes(input)) {
-                    break
+                    return input
                 }
                 else {
                     alert("Please enter a correct choice")
+                    
                 }
             }
-            return input
         } 
 
         
